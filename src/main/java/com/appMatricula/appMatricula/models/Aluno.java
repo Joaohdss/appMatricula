@@ -1,17 +1,11 @@
 package com.appMatricula.appMatricula.models;
+
 import java.util.ArrayList;
 
-
-
 import javax.persistence.Column;
-
 import javax.persistence.Entity;
-
 import javax.persistence.Id;
-
 import javax.persistence.Table;
-
-
 
 @Entity
 
@@ -19,31 +13,20 @@ import javax.persistence.Table;
 
 public class Aluno {
 
-	
-
 	@Id
-
 	private Long matricula;
 
 	@Column(nullable = false)
-
 	private String nome;
-
 	@Column(nullable = false)
-
 	private String email;
-
 	@Column(nullable = false)
-
 	private int periodoInicial;
-
 	@Column(nullable = false)
 
 	private String senha;
 
 	private ArrayList<String> disciplinasPreMatriculadas = new ArrayList<>();
-
-	
 
 	public String getSenha() {
 
@@ -51,15 +34,11 @@ public class Aluno {
 
 	}
 
-
-
 	public void setSenha(String senha) {
 
 		this.senha = senha;
 
 	}
-
-
 
 	public int getPeriodoInicial() {
 
@@ -67,15 +46,11 @@ public class Aluno {
 
 	}
 
-	
-
 	public void setPeriodoInicial(int periodoInicial) {
 
 		this.periodoInicial = periodoInicial;
 
 	}
-
-	
 
 	public String getEmail() {
 
@@ -83,15 +58,11 @@ public class Aluno {
 
 	}
 
-	
-
 	public ArrayList<String> getDisciplinasPreMatriculadas() {
 
 		return disciplinasPreMatriculadas;
 
 	}
-
-
 
 	public void setDisciplinasPreMatriculadas(ArrayList<String> disciplinasPreMatriculadas) {
 
@@ -99,15 +70,11 @@ public class Aluno {
 
 	}
 
-
-
 	public void setEmail(String email) {
 
 		this.email = email;
 
 	}
-
-	
 
 	public Long getMatricula() {
 
@@ -115,23 +82,17 @@ public class Aluno {
 
 	}
 
-	
-
 	public void setMatricula(Long matricula) {
 
 		this.matricula = matricula;
 
 	}
 
-	
-
 	public String getNome() {
 
 		return nome;
 
 	}
-
-	
 
 	public void setNome(String nome) {
 
