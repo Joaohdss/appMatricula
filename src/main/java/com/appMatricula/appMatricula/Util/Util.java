@@ -55,17 +55,12 @@ public class Util {
 	}
 	public boolean verificaSenha(String senhaUsuario, String senhaInformada) {
 		boolean status = false;
-		String senhaUsuarioDes = descriptografar(senhaUsuario);
+		String senhaUsuarioDes = criptografar(senhaInformada);
 		if (senhaInformada.equalsIgnoreCase(senhaUsuarioDes))
 			status = true;
 		return status;
 	}
 	public String criptografar(String senha) {
 		return Base64.encodeBase64String(senha.getBytes());
-	}
-	
-	public String descriptografar(String senhaCriptografada) {
-		byte[] senha = Base64.decodeBase64(senhaCriptografada);
-		return new String(senha);
 	}
 }
