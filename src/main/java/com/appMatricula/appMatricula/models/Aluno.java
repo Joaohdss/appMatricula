@@ -2,7 +2,6 @@ package com.appMatricula.appMatricula.models;
 
 import java.util.ArrayList;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -13,13 +12,13 @@ public class Aluno {
 	
 	@Id
 	private Long matricula;
-	@Column(nullable = false)
+
 	private String nome;
-	@Column(nullable = false)
+	
 	private String email;
-	@Column(nullable = false)
+
 	private int periodoInicial;
-	@Column(nullable = false)
+
 	private String senha;
 	private ArrayList<String> disciplinasPreMatriculadas = new ArrayList<>();
 	

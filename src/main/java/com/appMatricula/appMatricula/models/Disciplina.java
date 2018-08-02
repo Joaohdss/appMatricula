@@ -18,13 +18,13 @@ public class Disciplina implements Serializable{
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
-	@Column(nullable = false)
+	
 	private String nome;
-	@Column(nullable = false)
+	
 	private int numeroDeCreditos;
-	@Column(nullable = false)
+
 	private int cargaHoraria;
-	@Column(nullable = false)
+
 	private String grade;
 	private  int vagas = valorVagas;
 	
