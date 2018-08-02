@@ -15,6 +15,6 @@ public class AppMatriculaApplication {
 	
 	@RequestMapping("/cadastrarAluno")
 	public String index() {
-		return "../resources/templates/index";
+		return "../templates/index";
 	}
 }
