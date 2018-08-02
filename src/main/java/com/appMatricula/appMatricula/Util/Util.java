@@ -45,7 +45,7 @@ public class Util {
 	public boolean verificaSenha(String senhaUsuario, String senhaInformada) {
 		boolean status = false;
 		String senhaUsuarioDes = criptografar(senhaInformada);
-		if (senhaInformada.equalsIgnoreCase(senhaUsuarioDes))
+		if (senhaUsuario.equalsIgnoreCase(senhaUsuarioDes))
 			status = true;
 		return status;
 	}
