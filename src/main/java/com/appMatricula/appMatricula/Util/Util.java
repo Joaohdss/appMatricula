@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class Util {
 	
-	public boolean validaEmailAluno(String email) {
+	public boolean validaEmail(String email) {
 		boolean status = false;
 		
 		String strPadrao = "[a-zA-Z]+[a-zA-Z.]*+@ccc.ufcg.edu.br";
@@ -22,17 +22,6 @@ public class Util {
 		return status;
 	}
 	
-	public boolean validaEmailCoord(String email) {
-		boolean status = false;
-		
-		String strPadrao = "[a-zA-Z]+[a-zA-Z.]*+@computacao.ufcg.edu.br";
-		Pattern pattern = Pattern.compile(strPadrao);
-		Matcher matcher = pattern.matcher(email);
-		
-		if (matcher.matches()) 
-			status = true;
-		return status;
-	}
 	
 	public boolean validaNomeAluno(String nome) {
 		boolean status = false;

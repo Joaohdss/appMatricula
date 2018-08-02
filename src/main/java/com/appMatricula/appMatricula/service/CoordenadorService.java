@@ -20,7 +20,7 @@ public class CoordenadorService {
 	
 	public Coordenador add(Coordenador coordenador) throws Exception {
 		Coordenador coordAdd = null;
-		if (util.validaEmailCoord(coordenador.getEmail()) && util.validaSenha(coordenador.getSenha())
+		if (util.validaEmail(coordenador.getEmail()) && util.validaSenha(coordenador.getSenha())
 				&& !(existeEmail(coordenador.getEmail()))) {
 			coordenador.setSenha(util.criptografar(coordenador.getSenha()));
 			coordAdd = coordenadorRepository.save(coordenador);

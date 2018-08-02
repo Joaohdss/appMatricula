@@ -22,7 +22,7 @@ public class AlunoService {
 		String senhaS = aluno.getSenha();
 		boolean verifica = existe(aluno.getEmail(),aluno.getMatricula());
 		aluno.setSenha(util.criptografar(senhaS));
-		if(util.validaEmailAluno(aluno.getEmail()) 
+		if(util.validaEmail(aluno.getEmail()) 
 				&& !verifica) {
 			
 			return alunoRepository.save(aluno);
