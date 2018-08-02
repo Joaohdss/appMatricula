@@ -13,8 +13,9 @@ public class AppMatriculaApplication {
 		SpringApplication.run(AppMatriculaApplication.class, args);
 	}
 	
-	@RequestMapping("/")
+	@RequestMapping("/home")
 	public String index() {
 		return "index";
 	}
+	
 }

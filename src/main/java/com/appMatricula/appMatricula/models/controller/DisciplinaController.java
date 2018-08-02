@@ -17,9 +17,14 @@ import com.appMatricula.appMatricula.service.DisciplinaService;
 @Controller
 public class DisciplinaController {
 	
+	
 	@Autowired
 	private DisciplinaService disciplinaService;
 	
+	@RequestMapping("/home")
+	public String index() {
+		return "index";
+	}
 	@RequestMapping(value = "/api/post", method = RequestMethod.POST)
 	public ResponseEntity<Disciplina> add(@RequestBody Disciplina disciplina) throws Exception {
 		return new ResponseEntity<>(disciplinaService.add(disciplina),HttpStatus.OK);
