@@ -13,13 +13,9 @@ public class Aluno {
 	
 	@Id
 	private Long matricula;
-
 	private String nome;
-	@Column(nullable = false)
 	private String email;
-
 	private int periodoInicial;
-	@Column(nullable = false)
 	private String senha;
 	private ArrayList<String> disciplinasPreMatriculadas = new ArrayList<>();
 	

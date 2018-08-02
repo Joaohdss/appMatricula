@@ -2,7 +2,6 @@ package com.appMatricula.appMatricula.models;
 
 import java.io.Serializable;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -24,7 +23,7 @@ public class Disciplina implements Serializable{
 	private int numeroDeCreditos;
 
 	private int cargaHoraria;
-
+    
 	private String grade;
 	private  int vagas = valorVagas;
 	
