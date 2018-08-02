@@ -13,7 +13,7 @@ public class AppMatriculaApplication {
 		SpringApplication.run(AppMatriculaApplication.class, args);
 	}
 	
-	@RequestMapping("/cadastrarAluno")
+	@RequestMapping("/home")
 	public String index() {
 		return "index";
 	}
